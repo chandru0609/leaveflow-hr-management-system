@@ -1,0 +1,127 @@
+.pending-main {
+
+    flex: 1;
+    padding: 40px;
+    background: #f8fafc;
+    min-height: 100vh;
+
+}
+
+.pending-main h1 {
+
+    font-size: 32px;
+    color: #1e293b;
+    margin-bottom: 30px;
+
+}
+
+.pending-main table {
+
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+
+}
+
+.pending-main thead {
+
+    background: #2563eb;
+    color: white;
+
+}
+
+.pending-main th {
+
+    padding: 18px;
+    text-align: left;
+    font-size: 15px;
+
+}
+
+.pending-main td {
+
+    padding: 18px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #475569;
+    font-size: 15px;
+
+}
+
+.pending-main tr:hover {
+
+    background: #f1f5f9;
+
+}
+
+.pending-main button {
+
+    margin-right: 8px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s;
+
+}
+
+.pending-main button:nth-child(1) {
+
+    background: #22c55e;
+    color: white;
+
+}
+
+.pending-main button:nth-child(1):hover {
+
+    background: #16a34a;
+
+}
+
+.pending-main button:nth-child(2) {
+
+    background: #f59e0b;
+    color: white;
+
+}
+
+.pending-main button:nth-child(2):hover {
+
+    background: #d97706;
+
+}
+
+.pending-main button:nth-child(3) {
+
+    background: #ef4444;
+    color: white;
+
+}
+
+.pending-main button:nth-child(3):hover {
+
+    background: #dc2626;
+
+}
+
+@media (max-width:900px){
+
+    .pending-main{
+
+        padding:20px;
+
+    }
+
+    .pending-main table{
+
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+
+    }
+
+}

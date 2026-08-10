@@ -1,0 +1,435 @@
+/* =========================================
+   PROFILE MAIN
+========================================= */
+
+.profile-main {
+  flex: 1;
+  padding: 40px;
+  background: #eef2f7;
+  min-height: 100vh;
+}
+
+
+/* =========================================
+   PROFILE HEADER
+========================================= */
+
+.profile-header h1 {
+  font-size: 34px;
+  color: #111827;
+  margin: 0;
+}
+
+.profile-header p {
+  color: #64748b;
+  margin-top: 10px;
+}
+
+
+/* =========================================
+   PROFILE TOP
+========================================= */
+
+.profile-top {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.profile-left-card,
+.profile-right-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   PROFILE AVATAR
+========================================= */
+
+.profile-avatar {
+  font-size: 120px;
+  color: #2563eb;
+  display: block;
+  margin: auto;
+}
+
+
+/* =========================================
+   LEFT CARD
+========================================= */
+
+.profile-left-card h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #111827;
+}
+
+.profile-left-card p {
+  text-align: center;
+  color: #64748b;
+  margin: 10px 0 20px;
+}
+
+
+/* =========================================
+   EDIT PROFILE BUTTON
+========================================= */
+
+.edit-profile-btn {
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #2563eb;
+  color: white;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.edit-profile-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RIGHT CARD
+========================================= */
+
+.profile-right-card h2 {
+  color: #111827;
+  margin: 5px 0 0;
+}
+
+
+/* =========================================
+   INFORMATION GRID
+========================================= */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+
+/* =========================================
+   INFORMATION ITEM
+========================================= */
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.info-item svg {
+  font-size: 22px;
+  color: #2563eb;
+}
+
+.info-item span {
+  display: block;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.info-item strong {
+  color: #111827;
+  font-size: 15px;
+}
+
+
+/* =========================================
+   EDIT PROFILE PANEL
+========================================= */
+
+.edit-profile-panel {
+  background: white;
+
+  margin-top: 30px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  border: 1px solid #e2e8f0;
+}
+
+
+/* =========================================
+   EDIT HEADER
+========================================= */
+
+.edit-profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  padding-bottom: 20px;
+}
+
+.edit-profile-header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 24px;
+}
+
+.edit-profile-header p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.close-edit-btn {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #f1f5f9;
+
+  color: #64748b;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+.close-edit-btn:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+
+/* =========================================
+   EDIT FORM GRID
+========================================= */
+
+.edit-form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #334155;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.form-group input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 15px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+
+  color: #111827;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+
+  background: white;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.edit-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 30px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+
+/* =========================================
+   CANCEL
+========================================= */
+
+.cancel-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 20px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #475569;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #f1f5f9;
+}
+
+
+/* =========================================
+   SAVE
+========================================= */
+
+.save-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 22px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .profile-main {
+    padding: 25px;
+  }
+
+  .profile-top {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .profile-main {
+    padding: 20px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-actions {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .save-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+}

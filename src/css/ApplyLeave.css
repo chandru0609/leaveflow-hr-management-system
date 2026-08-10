@@ -1,0 +1,631 @@
+/* ===========================================================
+   APPLY LEAVE PAGE
+=========================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:"Segoe UI",sans-serif;
+
+}
+
+body{
+
+    background:#eef2f7;
+
+}
+
+.dashboard{
+
+    display:flex;
+
+    min-height:100vh;
+
+    background:#eef2f7;
+
+}
+
+.apply-main{
+
+    flex:1;
+
+    padding:35px;
+
+}
+
+/* ===========================================================
+   PAGE HEADER
+=========================================================== */
+
+.apply-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.apply-header h1{
+
+    font-size:34px;
+
+    color:#0f172a;
+
+    margin-bottom:8px;
+
+}
+
+.apply-header p{
+
+    color:#64748b;
+
+    font-size:16px;
+
+}
+
+/* ===========================================================
+   LEAVE OVERVIEW CARDS
+=========================================================== */
+
+.leave-overview{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+    margin-bottom:30px;
+
+}
+
+.overview-card{
+
+    background:#ffffff;
+
+    padding:28px;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+
+    border:1px solid #edf2f7;
+
+    transition:.35s;
+
+}
+
+.overview-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.10);
+
+}
+
+.overview-card h3{
+
+    color:#64748b;
+
+    font-size:15px;
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+}
+
+.overview-card h2{
+
+    color:#2563eb;
+
+    font-size:36px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   LEAVE TYPE CARDS
+=========================================================== */
+
+.leave-types{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+    margin-bottom:35px;
+
+}
+
+.type-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    border:1px solid #edf2f7;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.type-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.type-card svg{
+
+    font-size:40px;
+
+    color:#2563eb;
+
+    margin-bottom:18px;
+
+    transition:.35s;
+
+}
+
+.type-card:hover svg{
+
+    color:white;
+
+}
+
+.type-card h3{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+/* ===========================================================
+   APPLY FORM
+=========================================================== */
+
+.apply-card{
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+
+    border:1px solid #edf2f7;
+
+    margin-bottom:35px;
+
+}
+
+.apply-card h2{
+
+    color:#0f172a;
+
+    margin-bottom:28px;
+
+    font-size:28px;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.full-width{
+
+    grid-column:1 / -1;
+
+}
+
+.form-group label{
+
+    font-size:15px;
+
+    color:#475569;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:1px solid #dbe3ef;
+
+    border-radius:12px;
+
+    outline:none;
+
+    background:#f8fafc;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus{
+
+    border-color:#2563eb;
+
+    background:#ffffff;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+.form-group textarea{
+
+    resize:none;
+
+    min-height:130px;
+
+}
+
+/* ===========================================================
+   SUMMARY SECTION
+=========================================================== */
+
+.leave-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-top:30px;
+
+    margin-bottom:30px;
+
+}
+
+.summary-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:22px;
+
+    background:#f8fbff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+}
+
+.summary-box svg{
+
+    font-size:32px;
+
+    color:#2563eb;
+
+}
+
+.summary-box h4{
+
+    color:#0f172a;
+
+    margin-bottom:6px;
+
+    font-size:17px;
+
+}
+
+.summary-box p{
+
+    color:#64748b;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+}
+
+/* ===========================================================
+   SUBMIT BUTTON
+=========================================================== */
+
+.submit-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(37,99,235,.30);
+
+}
+/* ===========================================================
+   APPROVAL TIMELINE
+=========================================================== */
+
+.timeline-card{
+
+    margin-top:35px;
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+
+    border:1px solid #edf2f7;
+
+}
+
+.timeline-card h2{
+
+    margin-bottom:30px;
+
+    color:#0f172a;
+
+    font-size:28px;
+
+}
+
+.timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.timeline-circle{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:#e2e8f0;
+
+    color:#64748b;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+}
+
+.timeline-circle.active{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.timeline-item h4{
+
+    color:#0f172a;
+
+    margin-bottom:6px;
+
+    font-size:18px;
+
+}
+
+.timeline-item p{
+
+    color:#64748b;
+
+    line-height:1.6;
+
+}
+
+/* ===========================================================
+   SMOOTH ANIMATIONS
+=========================================================== */
+
+.overview-card,
+
+.type-card,
+
+.apply-card,
+
+.timeline-card,
+
+.summary-box{
+
+    transition:all .35s ease;
+
+}
+
+.overview-card:hover,
+
+.type-card:hover,
+
+.summary-box:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.apply-card:hover,
+
+.timeline-card:hover{
+
+    box-shadow:0 20px 45px rgba(15,23,42,.10);
+
+}
+
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .leave-overview{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .leave-types{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .leave-summary{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .apply-main{
+
+        padding:20px;
+
+    }
+
+    .apply-header h1{
+
+        font-size:28px;
+
+    }
+
+    .apply-card{
+
+        padding:25px;
+
+    }
+
+    .timeline-card{
+
+        padding:25px;
+
+    }
+
+    .timeline-item{
+
+        gap:15px;
+
+    }
+
+    .timeline-circle{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:16px;
+
+    }
+
+}

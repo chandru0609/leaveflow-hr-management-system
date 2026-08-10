@@ -1,0 +1,129 @@
+/* ==========================================================
+   APPROVED LEAVES PAGE
+========================================================== */
+
+.approved-main{
+
+    margin-left:260px;
+    min-height:100vh;
+    background:#f4f7fc;
+    padding:40px;
+
+}
+
+/* ================= HEADER ================= */
+
+.approved-header{
+
+    margin-bottom:30px;
+
+}
+
+.approved-header h1{
+
+    font-size:34px;
+    color:#0f172a;
+    margin-bottom:8px;
+
+}
+
+.approved-header p{
+
+    color:#64748b;
+    font-size:16px;
+
+}
+
+/* ================= CARD ================= */
+
+.approved-card{
+
+    background:#ffffff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 12px 30px rgba(15,23,42,.08);
+
+}
+
+/* ================= TABLE ================= */
+
+.approved-card table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.approved-card thead{
+
+    background:#f8fafc;
+
+}
+
+.approved-card th{
+
+    padding:18px;
+    text-align:left;
+    color:#475569;
+    font-size:15px;
+    font-weight:600;
+
+}
+
+.approved-card td{
+
+    padding:18px;
+    border-top:1px solid #eef2f7;
+    color:#334155;
+
+}
+
+.approved-card tbody tr{
+
+    transition:.3s;
+
+}
+
+.approved-card tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+/* ================= STATUS ================= */
+
+.approved-status{
+
+    background:#dcfce7;
+    color:#15803d;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .approved-main{
+
+        margin-left:0;
+        padding:20px;
+
+    }
+
+    .approved-card{
+
+        overflow-x:auto;
+
+    }
+
+    .approved-card table{
+
+        min-width:1100px;
+
+    }
+
+}

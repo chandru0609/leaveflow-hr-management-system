@@ -1,0 +1,123 @@
+.sidebar {
+  width: 270px;
+  min-width: 270px;
+  height: 100vh;
+
+  background: #1e293b;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-right: 1px solid #334155;
+
+  position: sticky;
+  top: 0;
+}
+
+/* ================= LOGO ================= */
+
+.sidebar-logo {
+  padding: 35px 28px;
+  border-bottom: 1px solid #151a23;
+}
+
+.sidebar-logo h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.sidebar-logo p {
+  margin-top: 6px;
+  color: #8b95a5;
+  font-size: 14px;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 25px 15px;
+  flex: 1;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  color: #b8c0cc;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 15px 18px;
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* HOVER */
+
+.sidebar nav a:hover {
+  background: #171c26;
+  color: #ffffff;
+}
+
+
+/* ACTIVE */
+
+.sidebar nav a.active {
+  background: #2563eb;
+  color: #ffffff;
+
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.35);
+}
+
+
+/* ================= FOOTER ================= */
+
+.sidebar-footer {
+  padding: 20px 15px;
+  border-top: 1px solid #151a23;
+}
+
+.sidebar-footer button {
+  width: 100%;
+  margin-bottom: 10px;
+
+  background: none;
+  border: none;
+
+  color: #b8c0cc;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 15px 18px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+
+/* ADMIN SIDEBAR - SAME DARK SHADE AS EMPLOYEE SIDEBAR */
+
+.sidebar {
+    background: #0b0f14 !important;
+    border-right: 1px solid #1f2937 !important;
+}
